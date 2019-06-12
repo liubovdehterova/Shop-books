@@ -1,0 +1,722 @@
+/* line 1, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: SegoeWP;
+  src: url("../fonts/SegoeWP.eot"), url("../fonts/SegoeWP.svg"), url("../fonts/SegoeWP.ttf"), url("../fonts/SegoeWP.woff"), url("../fonts/SegoeWP.woff2");
+}
+
+@font-face {
+  font-family: HelveticaLTStd-Roman;
+  src: url("../fonts/HelveticaLTStd-Roman.eot"), url("../fonts/HelveticaLTStd-Roman.svg"), url("../fonts/HelveticaLTStd-Roman.ttf"), url("../fonts/HelveticaLTStd-Roman.woff"), url("../fonts/HelveticaLTStd-Roman.woff2");
+}
+
+@font-face {
+  font-family: SegoeWP-SemiLight;
+  src: url("../fonts/SegoeWP-SemiLight.eot"), url("../fonts/SegoeWP-SemiLight.svg"), url("../fonts/SegoeWP-SemiLight.ttf"), url("../fonts/SegoeWP-SemiLight.woff"), url("../fonts/SegoeWP-SemiLight.woff2");
+}
+
+/* line 29, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+/* line 33, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.user__menu {
+  background-color: #424242;
+}
+
+/* line 35, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.user__menu__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 38, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.user__menu__list-item {
+  list-style: none;
+  margin-right: 18px;
+}
+
+/* line 41, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.user__menu__list-item:last-child {
+  margin-right: 0;
+}
+
+/* line 44, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.user__menu__list-item__link {
+  font-family: SegoeWP;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* line 55, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%);
+  padding: 15px 0;
+}
+
+/* line 58, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user {
+  display: flex;
+  justify-content: space-between;
+  font-family: SegoeWP;
+  color: #6d6d6d;
+}
+
+/* line 63, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__logo {
+  background-image: url("../css/image/logo.png");
+  width: 136px;
+  height: 74px;
+}
+
+/* line 68, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__search {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+/* line 72, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__search-item {
+  border: 4px solid #79b260;
+  width: 80%;
+  line-height: 30px;
+}
+
+/* line 77, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__search__button {
+  background: #79b260;
+  line-height: 30px;
+  font-size: 23px;
+  color: #ffffff;
+  border: 4px solid #79b260;
+  padding: 0 5px;
+}
+
+/* line 86, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__cart {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+/* line 91, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__cart-inner {
+  position: relative;
+  font-size: 23px;
+  line-height: 26px;
+}
+
+/* line 95, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__cart-inner__items {
+  font-size: 13px;
+}
+
+/* line 98, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__cart-inner::before {
+  content: "";
+  display: block;
+  background-image: url("../css/image/Shape_9.svg");
+  width: 27px;
+  height: 29px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+/* line 109, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__cart__check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 113, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__cart__check-inner {
+  font-size: 27px;
+  color: #6d6d6d;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+/* line 119, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__cart__check__button {
+  box-shadow: inset 1px 1px 0 rgba(118, 118, 118, 0.75);
+  background-image: linear-gradient(to top, #242424 0%, #424242 100%);
+  border: 1px solid #232323;
+  font-size: 15px;
+  line-height: 26px;
+  color: #ffffff;
+  padding: 0 11px;
+}
+
+/* line 130, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__wish {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  justify-content: center;
+}
+
+/* line 135, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__wish__item {
+  font-size: 13px;
+  font-family: SegoeWP;
+  color: #ffffff;
+  background-color: #79b260;
+  border-radius: 25px;
+  padding: 0 7px;
+  position: absolute;
+  top: 12%;
+  right: 0;
+}
+
+/* line 146, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.panel__user__wish__link {
+  font-family: SegoeWP;
+  font-size: 21px;
+  text-decoration: none;
+  color: #6d6d6d;
+}
+
+/* line 156, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.menu {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+/* line 159, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.menu__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 162, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.menu__nav__inner {
+  list-style: none;
+  padding: 5px 20px;
+}
+
+/* line 165, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.menu__nav__inner:hover {
+  background-image: linear-gradient(to top, #79b260 0%, #92d774 100%);
+}
+
+/* line 167, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.menu__nav__inner:hover .menu__nav__inner__link {
+  color: #ffffff;
+}
+
+/* line 171, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.menu__nav__inner__link {
+  color: #5b5b5b;
+  font-family: SegoeWP;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+/* line 180, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.stock {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 184, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.book {
+  background: radial-gradient(#ffffff, #3b3b3b);
+  z-index: -2;
+  text-align: center;
+  font-family: SegoeWP;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+
+/* line 191, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.book__today {
+  background: url("../css/image/Layer_15.png");
+  background-size: contain;
+  width: 84px;
+  height: 111px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+/* line 200, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.book__today::before {
+  content: "";
+  display: block;
+  background: url("../css/image/2-layers.png");
+  width: 176px;
+  height: 24px;
+  position: absolute;
+  bottom: -19px;
+  left: -47px;
+  z-index: -1;
+}
+
+/* line 212, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.book__titel {
+  font-size: 27px;
+}
+
+/* line 215, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.book__subtitel {
+  font-size: 15px;
+}
+
+/* line 218, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.book__info {
+  font-size: 21px;
+}
+
+/* line 221, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.book__price {
+  font-size: 29px;
+}
+
+/* line 224, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.book__buy {
+  background-image: linear-gradient(to top, #51a451 0%, #61c261 100%);
+  border: 1px solid #52a452;
+  border-radius: 5px;
+  font-size: 19px;
+  color: #ffffff;
+  font-family: SegoeWP;
+  padding: 7px 17px;
+}
+
+/* line 234, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.main {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  margin: 25px 0;
+}
+
+/* line 238, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.main__button {
+  display: flex;
+  justify-content: flex-end;
+  font-family: HelveticaLTStd-Roman;
+  margin-top: 45px;
+  padding-bottom: 5px;
+  padding-right: 30px;
+}
+
+/* line 245, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.main__button__inner {
+  padding: 9px;
+  background: none;
+  border-top: 1px solid rgba(0, 0, 1, 0);
+  border-right: 1px solid rgba(0, 0, 1, 0);
+  border-left: 1px solid rgba(0, 0, 1, 0);
+  border-bottom: 3px solid rgba(4, 121, 14, 0);
+  color: #646464;
+  font-size: 16px;
+}
+
+/* line 254, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.main__button__inner:hover {
+  border-top: 1px solid rgba(0, 0, 1, 0.2);
+  border-right: 1px solid rgba(0, 0, 1, 0.2);
+  border-left: 1px solid rgba(0, 0, 1, 0.2);
+  border-bottom: 3px solid rgba(4, 121, 13, 0.8);
+}
+
+/* line 263, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.categories {
+  border: 1px solid rgba(0, 0, 1, 0.161);
+  margin-right: 10px;
+}
+
+/* line 267, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.categories__inner__titel {
+  list-style: none;
+  font-family: SegoeWP;
+  color: #6b6969;
+  font-size: 24px;
+  padding: 7px 0 7px 19px;
+}
+
+/* line 274, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.categories__inner__list {
+  list-style: none;
+  font-family: SegoeWP;
+  font-size: 17px;
+  cursor: pointer;
+  color: #696969;
+}
+
+/* line 280, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.categories__inner__list__titel {
+  display: block;
+  padding: 7px 0 7px 21px;
+}
+
+/* line 283, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.categories__inner__list__titel:hover {
+  background-image: linear-gradient(to top, #79b260 0%, #92d774 100%);
+  color: #ffffff;
+}
+
+/* line 289, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.categories__inner__hidden {
+  padding: 7px 0 7px 0;
+}
+
+/* line 291, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.categories__inner__hidden__list {
+  list-style: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(170, 170, 170, 0.55);
+  padding: 0 0 3px 0;
+  margin: 0 25px;
+}
+
+/* line 298, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.categories__inner__hidden__link {
+  text-decoration: none;
+  color: #555454;
+  font-size: 15px;
+  font-family: SegoeWP;
+}
+
+/* line 309, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__books {
+  border-left: 1px solid rgba(0, 0, 1, 0.161);
+  border-right: 1px solid rgba(0, 0, 1, 0.161);
+  border-bottom: 1px solid rgba(0, 0, 1, 0.161);
+  background: linear-gradient(rgba(0, 0, 1, 0.161), rgba(0, 0, 1, 0.161));
+  background-size: 246px 1px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top;
+  padding-top: 30px;
+}
+
+/* line 319, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__filter {
+  display: flex;
+}
+
+/* line 321, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__filter__inner {
+  padding: 15px 25px;
+  font-family: HelveticaLTStd-Roman;
+  color: #6b6969;
+  font-size: 17px;
+  text-shadow: 1px 1px 0 #ffffff;
+  background: linear-gradient(to top, rgba(71, 69, 69, 0.2), rgba(255, 255, 255, 0.2));
+  border: 1px solid rgba(0, 0, 1, 0.16);
+}
+
+/* line 329, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__filter__inner:hover {
+  color: #464646;
+  background: #ffffff;
+  border-bottom: none;
+}
+
+/* line 336, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* line 339, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books {
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+/* line 343, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__price {
+  font-family: HelveticaLTStd-Roman;
+  font-size: 22px;
+  color: #f05356;
+}
+
+/* line 348, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__link {
+  font-family: SegoeWP-SemiLight;
+  text-decoration: none;
+  color: #525252;
+  font-size: 15px;
+  padding: 0 24px;
+  display: block;
+}
+
+/* line 355, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__link-item {
+  padding: 0 30px;
+}
+
+/* line 361, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__one-block__one::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_56.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 371, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__one-block__two::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_58.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 381, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__one-block__three::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_59.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 391, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__one-block__four::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_60.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 401, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__one-block__five::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_61.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 413, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__two-block__one::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_106.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 423, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__two-block__two::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_107.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 433, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__two-block__three::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_108.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 443, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__two-block__four::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_109.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 453, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__two-block__five::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_110.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 465, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__three-block__one::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_133.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 475, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__three-block__two::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_134.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 485, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__three-block__three::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_135.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 495, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__three-block__four::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_136.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 505, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.product__inner__books__three-block__five::before {
+  content: "";
+  display: block;
+  background: url("../css/image/Layer_137.png");
+  width: 120px;
+  height: 172px;
+  margin: 0 auto;
+}
+
+/* line 519, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.footer__navigation {
+  padding: 25px 0 35px 0;
+  background: #414343;
+}
+
+/* line 522, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.footer__navigation__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr 1fr;
+}
+
+/* line 526, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.footer__navigation__list {
+  padding-left: 20px;
+}
+
+/* line 528, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.footer__navigation__list:first-child {
+  padding-left: 0;
+}
+
+/* line 531, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.footer__navigation__list__inner {
+  list-style: none;
+  color: #dddddd;
+  font-family: SegoeWP;
+  font-size: 20px;
+  border-bottom: 0.5px solid rgba(170, 170, 170, 0.55);
+}
+
+/* line 537, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.footer__navigation__list__inner:first-child {
+  border-bottom: none;
+  margin-bottom: 30px;
+}
+
+/* line 541, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.footer__navigation__list__inner:last-child {
+  border-bottom: none;
+}
+
+/* line 545, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.footer__navigation__list__link {
+  text-decoration: none;
+  color: #dddddd;
+  font-size: 14px;
+}
+
+/* line 553, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.payment {
+  background: #2f312f;
+  padding: 30px 0;
+  text-align: center;
+  color: #dddddd;
+  font-family: SegoeWP;
+}
+
+/* line 559, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.payment__titel {
+  font-size: 20px;
+}
+
+/* line 561, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.payment__titel__subtitel {
+  font-size: 16px;
+}
+
+/* line 565, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.payment__card {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 30px 0;
+}
+
+/* line 569, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.payment__card__link {
+  display: block;
+  width: 50px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+/* line 574, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.payment__card__link:last-child {
+  margin-right: 0;
+}
+
+/* line 578, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.payment__card__master-card {
+  background-image: url("../css/image/Layer_208.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* line 583, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.payment__card__american-express {
+  background-image: url("../css/image/Layer_209.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* line 588, C:/Users/User/Desktop/projeck/app/scss/ShopBooks.scss */
+.payment__card__visa {
+  background-image: url("../css/image/Layer_207.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=../css/ShopBooks.map */

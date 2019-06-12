@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: SegoeWP;
+  src: url("../fonts/SegoeWP.eot"), url("../fonts/SegoeWP.svg"), url("../fonts/SegoeWP.ttf"), url("../fonts/SegoeWP.woff"), url("../fonts/SegoeWP.woff2"); }
+
+@font-face {
+  font-family: HelveticaLTStd-Roman;
+  src: url("../fonts/HelveticaLTStd-Roman.eot"), url("../fonts/HelveticaLTStd-Roman.svg"), url("../fonts/HelveticaLTStd-Roman.ttf"), url("../fonts/HelveticaLTStd-Roman.woff"), url("../fonts/HelveticaLTStd-Roman.woff2"); }
+
+@font-face {
+  font-family: SegoeWP-SemiLight;
+  src: url("../fonts/SegoeWP-SemiLight.eot"), url("../fonts/SegoeWP-SemiLight.svg"), url("../fonts/SegoeWP-SemiLight.ttf"), url("../fonts/SegoeWP-SemiLight.woff"), url("../fonts/SegoeWP-SemiLight.woff2"); }
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto; }
+
+.sub-nav {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+  border: 1px solid #dedede;
+  opacity: 0.97;
+  padding: 8px 0 8px 17px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+  .sub-nav__inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .sub-nav__inner__list {
+      list-style: none;
+      font-family: SegoeWP;
+      font-size: 16px;
+      margin-right: 20px; }
+      .sub-nav__inner__list:last-child {
+        margin-right: 0; }
+        .sub-nav__inner__list:last-child::after {
+          display: none; }
+      .sub-nav__inner__list::after {
+        display: block;
+        content: "";
+        border: solid #a6a6a6;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg); }
+      .sub-nav__inner__list__link {
+        text-decoration: none;
+        color: #a6a6a6; }
+
+.discription {
+  padding: 3% 10% 5% 30%;
+  position: relative;
+  margin-top: 10px;
+  border: 1px solid #dedede;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+  .discription::before {
+    display: block;
+    content: "";
+    background: url("../css/image/TheHareWithAmberEyes.jpg");
+    -webkit-background-size: contain;
+            background-size: contain;
+    border: 1px solid #c8c8c8;
+    width: 250px;
+    padding-top: 391px;
+    position: absolute;
+    top: 28px;
+    left: 31px; }
+  .discription__war-Art::before {
+    display: block;
+    content: "";
+    background: url("../css/image/HowtoStudytheArtofWar.jpg");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #c8c8c8;
+    width: 250px;
+    padding-top: 391px;
+    position: absolute;
+    top: 28px;
+    left: 31px; }
+  .discription__titel {
+    font-family: SegoeWP-SemiLight;
+    color: #595959;
+    font-size: 41px;
+    margin-bottom: 25px; }
+  .discription__info {
+    font-family: SegoeWP;
+    color: #7e7e7e;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 25px; }
+  .discription__price {
+    border: 1px solid rgba(181, 176, 176, 0.57);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0 12px 25px; }
+    .discription__price__book {
+      color: #015699;
+      font-family: SegoeWP-SemiLight;
+      font-size: 36px; }
+      .discription__price__book__inner {
+        font-family: SegoeWP;
+        color: #e45858;
+        font-weight: 700; }
+      .discription__price__book-sub {
+        color: #939292;
+        font-family: SegoeWP;
+        font-size: 17px; }
+    .discription__price__add {
+      border: none;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#79b260), to(#92d774));
+      background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+      background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+      background-image: linear-gradient(to top, #79b260 0%, #92d774 100%);
+      color: #ffffff;
+      font-family: HelveticaLTStd-Roman;
+      font-size: 24px;
+      margin: 12px 35px; }
+    .discription__price__security {
+      margin-top: 25px; }
+      .discription__price__security__titel {
+        color: #939292;
+        font-family: SegoeWP-SemiLight;
+        font-size: 13px;
+        position: relative;
+        padding-left: 17px;
+        margin-bottom: 5px; }
+        .discription__price__security__titel::before {
+          display: block;
+          content: "";
+          background: url("../css/image/Layer_215.svg");
+          -webkit-background-size: contain;
+                  background-size: contain;
+          width: 14px;
+          height: 13px;
+          position: absolute;
+          top: 3px;
+          left: 0;
+          opacity: 0.5; }
+      .discription__price__security__inner {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+      .discription__price__security__pay {
+        display: block;
+        background: url("../css/image/paypal.svg");
+        width: 41px;
+        height: 26px;
+        margin-right: 8px; }
+        .discription__price__security__pay:last-child {
+          margin-right: 0; }
+        .discription__price__security__pay-mr {
+          background: url("../css/image/Layer_208.svg"); }
+        .discription__price__security__pay-visa {
+          background: url("../css/image/Layer_207.svg"); }
+        .discription__price__security__pay-american {
+          background: url("../css/image/Layer_209.svg"); }
+
+.product {
+  margin-top: 15px; }
+  .product__filter__information {
+    background: #c2c2c2;
+    font-family: SegoeWP;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 23px;
+    border: none;
+    margin-right: 10px;
+    -webkit-border-top-left-radius: 10px;
+            border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+            border-top-right-radius: 10px; }
+    .product__filter__information:last-child {
+      margin-right: 0; }
+    .product__filter__information:hover {
+      background: #ffffff;
+      color: #7e7e7e;
+      font-size: 18px;
+      border-left: 1px solid #00000129;
+      border-right: 1px solid #00000129;
+      border-top: 1px solid #00000129; }
+      .product__filter__information:hover ~ .product__information {
+        -webkit-background-size: 73.5% 1px;
+                background-size: 73.5% 1px; }
+    .product__filter__information-item:hover {
+      background: #ffffff;
+      color: #7e7e7e;
+      font-size: 18px;
+      border-left: 1px solid #00000129;
+      border-right: 1px solid #00000129;
+      border-top: 1px solid #00000129; }
+      .product__filter__information-item:hover ~ .product__information {
+        -webkit-background-size: 52.5% 1px;
+                background-size: 52.5% 1px; }
+  .product__information {
+    border-left: 1px solid #00000129;
+    border-right: 1px solid #00000129;
+    border-bottom: 1px solid #00000129;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00000129), to(#00000129));
+    background: -webkit-linear-gradient(#00000129, #00000129);
+    background: -o-linear-gradient(#00000129, #00000129);
+    background: linear-gradient(#00000129, #00000129);
+    -webkit-background-size: 100% 1px;
+            background-size: 100% 1px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    -webkit-border-top-left-radius: 0;
+            border-top-left-radius: 0; }
+    .product__information__inner {
+      color: #7e7e7e;
+      font-family: SegoeWP;
+      font-size: 14px;
+      line-height: 26px;
+      padding: 25px 47px 20px 30px; }
+
+.comment {
+  border: 1px solid #00000129;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin-top: 17px;
+  padding: 17px 55px 29px 26px; }
+  .comment__titel {
+    font-family: SegoeWP;
+    color: #7e7e7e;
+    font-size: 20px;
+    margin-bottom: 25px; }
+  .comment__inner {
+    text-align: end; }
+    .comment__inner__value {
+      color: #a2a2a2;
+      font-family: SegoeWP;
+      font-size: 16px;
+      margin-right: 20px;
+      text-align: end; }
+    .comment__inner__user {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-bottom: 15px; }
+      .comment__inner__user:last-child {
+        margin-bottom: 0; }
+    .comment__inner__info {
+      width: 80%;
+      border: 1px solid #e2e2e2;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      padding: 5px; }
+    .comment__inner__submit {
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#79b260), to(#92d774));
+      background-image: -webkit-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+      background-image: -o-linear-gradient(bottom, #79b260 0%, #92d774 100%);
+      background-image: linear-gradient(to top, #79b260 0%, #92d774 100%);
+      color: #ffffff;
+      font-family: HelveticaLTStd-Roman;
+      font-size: 18px;
+      padding: 12px 18px;
+      border: none; }
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-bottom: 20px; }
+
+.user__like {
+  border: 1px solid #dedede;
+  padding: 15px 14px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin-top: 59px;
+  margin-left: 16px; }
+  .user__like__titel {
+    color: #7e7e7e;
+    font-family: SegoeWP;
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .user__like__book {
+    position: relative;
+    padding-left: 60px;
+    font-family: SegoeWP;
+    margin-bottom: 25px; }
+    .user__like__book:last-child {
+      margin-bottom: 0; }
+    .user__like__book::before {
+      display: block;
+      content: "";
+      background: url("../css/image/Layer_56.png");
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover;
+      width: 50px;
+      height: 78px;
+      -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.13);
+              box-shadow: 0 0 16px rgba(0, 0, 0, 0.13);
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .user__like__book__titel {
+      color: #595959;
+      font-size: 15px; }
+    .user__like__book__price {
+      color: #f05356;
+      font-size: 22px;
+      font-family: HelveticaLTStd-Roman; }
+    .user__like__book__more {
+      background-color: #595959;
+      padding: 4px 8px;
+      color: #ffffff;
+      font-size: 15px;
+      border: none; }

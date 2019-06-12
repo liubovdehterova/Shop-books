@@ -1,0 +1,124 @@
+@font-face {
+    font-family: SegoeWP;
+    src: url("../fonts/SegoeWP.eot"),
+         url("../fonts/SegoeWP.svg"),
+         url("../fonts/SegoeWP.ttf"),
+         url("../fonts/SegoeWP.woff"),
+         url("../fonts/SegoeWP.woff2");
+}
+@font-face {
+    font-family: SegoeWP-Bold;
+    src: url("../fonts/SegoeWP-Bold.eot"),
+         url("../fonts/SegoeWP-Bold.svg"),
+         url("../fonts/SegoeWP-Bold.ttf"),
+         url("../fonts/SegoeWP-Bold.woff"),
+         url("../fonts/SegoeWP-Bold.woff2");
+}
+// *{
+//     overflow: hidden;
+//     margin: 0;
+// }
+.slider {
+    background: url("../css/image/Layer_8.png");
+    background-size: cover;
+    font-family: SegoeWP;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px;
+    width: 72%;
+    &__inner {
+        // width: 85%;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // position: relative;
+        display: none;
+        opacity: 0;
+        &__three {
+            padding: 100px 0;
+        }
+    }
+    &__book {
+        background: url("../css/image/Layer_7.png");
+        background-size: cover;
+        padding: 128px 84px;
+        &__item {
+            background: url("../css/image/Layer_6.png");
+            background-size: cover;
+        }
+    }
+    &__DVD {
+        background: url("../css/image/Layer_9.png");
+        background-size: contain;
+        padding: 60px 79px;
+        position: absolute;
+        bottom: 10px;
+        left: 115px;
+    }
+    &__info {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    &__titel {
+        font-family: SegoeWP-Bold;
+        font-size: 47px;
+        font-weight: 700;
+    }
+    &__context {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    &__subtitel {
+        font-family: SegoeWP-Bold;
+        font-size: 21px;
+        font-weight: 700;
+    }
+    &__prev {
+        width: 38px;
+        height: 38px;
+        background-color: rgba(0, 0, 0, 0.46);
+        border: none;
+        border-radius: 50%;
+        &::before {
+            position: relative;
+            content: "";
+            display: inline-block;
+            width: 0.8em;
+            height: 0.8em;
+            border-right: 0.5em solid black;
+            border-top: 0.5em solid black;
+            transform: rotate(-138deg);
+        }
+    }
+    &__next {
+        width: 38px;
+        height: 38px;
+        background-color: rgba(0, 0, 0, 0.46);
+        border: none;
+        border-radius: 50%;
+        &::before {
+            position: relative;
+            content: "";
+            display: inline-block;
+            width: 0.8em;
+            height: 0.8em;
+            border-right: 0.5em solid black;
+            border-top: 0.5em solid black;
+            transform: rotate(45deg);
+        }
+    }
+}
+.showing {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+}
+
+
