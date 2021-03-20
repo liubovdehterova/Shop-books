@@ -1,25 +1,4 @@
-// const listShow = document.querySelector('.categories__inner');
-// const treeLis = listShow.querySelectorAll('.categories__inner__list');
 
-// for (let i = 0; i < treeLis.length; i++) {
-//     let li = treeLis[i];
-
-//     const span = document.createElement('span');
-//     span.className += 'categories__inner__list__titel';
-//     li.insertBefore(span, li.firstChild);
-//     span.appendChild(span.nextSibling);
-// }
-// listShow.addEventListener('click', function(event) {
-//     const targetList = event.target;
-//     if (targetList.tagName != 'SPAN') {
-//         return;
-//     }
-//     const childrenContainer = targetList.parentNode.getElementsByTagName('ul')[0];
-//     console.log(childrenContainer);
-//     if (!childrenContainer) return;
-
-//     childrenContainer.hidden = !childrenContainer.hidden;
-// })
 var listShow = document.querySelector('.categories__inner');
 var treeLis = listShow.querySelectorAll('.categories__inner__list');
 
